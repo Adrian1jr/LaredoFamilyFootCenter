@@ -1,0 +1,86 @@
+import Link from 'next/link'
+import { MapPin } from 'lucide-react'
+import { logo } from '@/components/site-header'
+
+export function SiteFooter() {
+  return (
+    <footer className="footer">
+      <div className="shell footer-grid">
+        <div className="footer-brand">
+          <img src={logo} alt="Family Foot Center of Laredo logo" className="footer-logo" />
+          <p>Professional foot and ankle care for Laredo families, since 1994.</p>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=604+Shiloh+Dr,+Laredo,+TX+78045"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-directions"
+          >
+            <MapPin size={16} /> Get directions to our office
+          </a>
+        </div>
+        <div className="footer-column">
+          <p className="footer-heading">Browse our website</p>
+          <Link href="/">Home</Link>
+          <Link href="/foot-pain">Foot pain</Link>
+          <Link href="/heel-pain">Heel pain</Link>
+          <Link href="/ankle-pain">Ankle pain</Link>
+          <Link href="/wound-care">Wound care</Link>
+          <Link href="/#about-dr.-bell">About Dr. Bell</Link>
+          <Link href="/contact">Contact us</Link>
+        </div>
+        <div className="footer-column footer-contact">
+          <p className="footer-heading">Contact information</p>
+          <p>
+            <b>Address</b>
+            <br />
+            604 Shiloh Dr., Ste. #1
+            <br />
+            Laredo, TX 78045
+          </p>
+          <p>
+            <b>Phone</b>
+            <br />
+            <a href="tel:+19567123338">(956) 712-3338</a> / <a href="tel:+19567123338">(956) 712-FEET</a>
+          </p>
+          <p>
+            <b>Email</b>
+            <br />
+            <a href="mailto:lffc@yahoo.com">lffc@yahoo.com</a>
+          </p>
+        </div>
+        <div className="footer-column footer-hours">
+          <p className="footer-heading">Business hours</p>
+          <p>
+            <span>Mon – Wed</span>
+            <strong>9:00 am – 3:30 pm</strong>
+          </p>
+          <p>
+            <span>Thursday</span>
+            <strong>9:00 am – 5:30 pm</strong>
+          </p>
+          <p>
+            <span>Friday</span>
+            <strong>9:00 am – 12:00 pm</strong>
+          </p>
+          <p>
+            <span>Sat – Sun</span>
+            <strong>Closed</strong>
+          </p>
+        </div>
+      </div>
+      <div className="shell footer-bottom">
+        <p>© 2026 Laredo Family Foot Center.</p>
+        <p className="footer-credit">
+          Created by{' '}
+          <a href="https://laredowebdesigns.com" target="_blank" rel="noreferrer">
+            Laredo Web Designs
+          </a>
+        </p>
+        <div className="footer-legal">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </footer>
+  )
+}
