@@ -36,16 +36,13 @@ export function SiteHeader() {
         <div className="shell flex items-center justify-between gap-8 py-4 md:py-5">
           <Link href="/" className="flex items-center gap-3" aria-label="Laredo Family Foot Center home">
             <img src={logo} alt="Family Foot Center of Laredo logo" className="h-20 w-24 object-contain md:h-24 md:w-32" />
-            <span className="hidden border-l border-[#cd9c9e] pl-4 text-sm leading-tight text-[#662d2e] sm:block">
-              LAREDO FAMILY
-              <br />
-              <strong className="text-[#880303]">FOOT CENTER</strong>
+            <span className="hidden whitespace-nowrap border-l border-[#cd9c9e] pl-4 text-sm text-[#880303] sm:block">
+              <strong>LAREDO FAMILY FOOT CENTER</strong>
             </span>
           </Link>
           <div className="hidden items-center gap-8 md:flex">
             <div className="text-right">
               <p className="font-display text-3xl text-[#880303]">Dr. Daniel Bell, DPM</p>
-              <p className="text-xs uppercase tracking-[0.2em] text-[#6d0b0c]">Board-certified podiatry</p>
             </div>
             <a href="tel:+19567123338" className="button button-primary">
               <Phone size={16} /> Call today

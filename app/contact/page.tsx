@@ -1,7 +1,6 @@
-'use client'
-
 import Link from 'next/link'
-import { ArrowRight, CircleCheck, Clock3, Mail, MapPin, Phone } from 'lucide-react'
+import { CircleCheck, Clock3, Mail, MapPin, Phone } from 'lucide-react'
+import { BusinessHours } from '@/components/business-hours'
 
 const services = [
   { href: '/foot-pain', label: 'Diagnose and treat foot pain and foot ailments' },
@@ -19,53 +18,24 @@ export default function ContactPage() {
             <p className="cx-eyebrow">Contact us</p>
             <h1 className="cx-title">Get in touch with us</h1>
             <p className="cx-lede">
-              Fill out the form below or give us a call. We accept walk-ins as well as scheduled appointments.
+              Call, email, or visit us in Laredo. We welcome walk-ins and scheduled appointments.
             </p>
           </header>
 
           <div className="cx-grid">
-            <section className="page-enter delay-1" aria-labelledby="cx-form-title">
-              <h2 id="cx-form-title" className="sr-only">Send us a message</h2>
-              <form className="cx-form" onSubmit={(event) => { event.preventDefault(); event.currentTarget.reset() }}>
-                <div className="cx-row">
-                  <label className="cx-field">
-                    <span>First name</span>
-                    <input name="firstName" autoComplete="given-name" placeholder="Your first name" required />
-                  </label>
-                  <label className="cx-field">
-                    <span>Last name</span>
-                    <input name="lastName" autoComplete="family-name" placeholder="Your last name" required />
-                  </label>
+            <section className="cx-call page-enter delay-1" aria-labelledby="cx-call-title">
+              <div className="cx-contact-heading">
+                <span className="cx-call-icon"><Phone size={24} aria-hidden="true" /></span>
+                <h2 id="cx-call-title">Call our office</h2>
+              </div>
+              <p>Our team can help you plan your visit and answer questions about foot and ankle care.</p>
+              <a href="tel:+19567123338" className="cx-call-link">(956) 712-FEET (3338)</a>
+              <div className="cx-email">
+                <div className="cx-contact-heading">
+                  <span className="cx-call-icon"><Mail size={20} aria-hidden="true" /></span>
+                  <h3>Email us</h3>
                 </div>
-                <label className="cx-field">
-                  <span>Email</span>
-                  <input name="email" type="email" autoComplete="email" placeholder="Enter your email" required />
-                </label>
-                <label className="cx-field">
-                  <span>Phone</span>
-                  <input name="phone" type="tel" autoComplete="tel" placeholder="Enter your phone" required />
-                </label>
-                <label className="cx-field">
-                  <span>Message</span>
-                  <textarea name="message" rows={5} placeholder="Tell us how we can help" required />
-                </label>
-                <button type="submit" className="cx-submit">
-                  Send your request <ArrowRight size={16} aria-hidden="true" />
-                </button>
-              </form>
-
-              <div className="cx-direct">
-                <p className="cx-subhead">You can also contact us via</p>
-                <div className="cx-direct-links">
-                  <a href="mailto:lffc@yahoo.com">
-                    <span className="cx-circle"><Mail size={16} aria-hidden="true" /></span>
-                    lffc@yahoo.com
-                  </a>
-                  <a href="tel:+19567123338">
-                    <span className="cx-circle"><Phone size={16} aria-hidden="true" /></span>
-                    (956) 712-FEET (3338)
-                  </a>
-                </div>
+                <a href="mailto:lffc@yahoo.com">lffc@yahoo.com</a>
               </div>
             </section>
 
@@ -95,11 +65,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="cx-detail-title"><Clock3 size={16} aria-hidden="true" /> Office hours</p>
-                  <p>
-                    Mon–Wed: 9:00 am–3:30 pm<br />
-                    Thursday: 9:00 am–5:30 pm<br />
-                    Friday: 9:00 am–12:00 pm
-                  </p>
+                  <BusinessHours />
                 </div>
               </div>
             </aside>

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { CalendarCheck, Check, DoorOpen, Phone } from 'lucide-react'
+import { Check, Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Wound Care Specialist | Laredo Family Foot Center',
-  description: 'Care for diabetic wounds and ulcers, infected wounds, pressure ulcers, and arterial ulcers in Laredo, TX. Walk-ins and scheduled appointments welcome.',
+  description: 'Care for diabetic wounds and ulcers, infected wounds, pressure ulcers, and arterial ulcers in Laredo, TX.',
 }
 
 const woundTypes = [
@@ -70,20 +70,7 @@ export default function WoundCarePage() {
         </div>
       </section>
 
-      <section className="wound-access page-enter delay-1" aria-labelledby="wound-access-title">
-        <div className="shell wound-access-inner">
-          <div className="wound-access-copy">
-            <h2 id="wound-access-title">Walk-ins and scheduled appointments</h2>
-            <p>We know your schedule can be hectic and we understand that getting your wounds treated as soon as possible is a must, so we want to be as available to you as possible.</p>
-          </div>
-          <ul className="wound-access-options">
-            <li><DoorOpen size={22} aria-hidden="true" /><span>Walk-ins</span></li>
-            <li><CalendarCheck size={22} aria-hidden="true" /><span>Scheduled appointments</span></li>
-          </ul>
-        </div>
-      </section>
-
-      <section className="wound-types page-enter delay-2" aria-labelledby="wound-types-title">
+      <section className="wound-types page-enter delay-1" aria-labelledby="wound-types-title">
         <div className="shell">
           <p className="eyebrow eyebrow-dark">What we treat</p>
           <h2 id="wound-types-title" className="section-title mt-3">Types of wounds and ulcers</h2>

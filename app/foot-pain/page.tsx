@@ -16,8 +16,8 @@ export default function FootPainPage() {
               <strong>Laredo Family Foot Center&apos;s</strong> main goal. We specialize
               in diagnosing and treating a wide range of foot ailments. 25 years of
               treating <strong>Laredo</strong> makes us the best choice in the area for
-              your foot needs. Dr. Bell is Board Certified and stays up to date on the
-              latest treatments to better serve our patients.
+              your foot needs. Dr. Bell stays up to date on the latest treatments to
+              better serve our patients.
             </p>
             <p>
               We also want to make this process as easy for you as possible. We know your

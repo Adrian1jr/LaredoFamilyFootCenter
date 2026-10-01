@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { BusinessHours } from "@/components/business-hours";
 import {
   ArrowRight,
   Clock3,
   HeartPulse,
-  Mail,
   MapPin,
   Phone,
   ShieldCheck,
@@ -196,7 +196,7 @@ export default function Page() {
             <p className="mt-3 font-display text-4xl text-white">
               Dr. Daniel Bell,
               <br />
-              D.P.M., FACFAS
+              D.P.M.
             </p>
           </div>
           <p className="max-w-2xl text-lg leading-relaxed text-white/80">
@@ -236,21 +236,15 @@ export default function Page() {
               <Clock3 />
               <div>
                 <strong>Office hours</strong>
-                <p>
-                  Mon–Wed: 9:00 am–3:30 pm
-                  <br />
-                  Thursday: 9:00 am–5:30 pm
-                  <br />
-                  Friday: 9:00 am–12:00 pm
-                </p>
+                <BusinessHours />
               </div>
             </div>
             <div className="contact-row">
-              <Mail />
+              <Phone />
               <div>
-                <strong>Contact</strong>
+                <strong>Call us</strong>
                 <p>
-                  <a href="mailto:lffc@yahoo.com">lffc@yahoo.com</a>
+                  <a href="tel:+19567123338">(956) 712-3338</a>
                 </p>
               </div>
             </div>
