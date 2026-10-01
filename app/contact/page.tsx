@@ -15,7 +15,7 @@ export default function ContactPage() {
     <>
       <main className="cx-page">
         <div className="cx-shell">
-          <header className="cx-intro">
+          <header className="cx-intro page-enter">
             <p className="cx-eyebrow">Contact us</p>
             <h1 className="cx-title">Get in touch with us</h1>
             <p className="cx-lede">
@@ -24,7 +24,7 @@ export default function ContactPage() {
           </header>
 
           <div className="cx-grid">
-            <section aria-labelledby="cx-form-title">
+            <section className="page-enter delay-1" aria-labelledby="cx-form-title">
               <h2 id="cx-form-title" className="sr-only">Send us a message</h2>
               <form className="cx-form" onSubmit={(event) => { event.preventDefault(); event.currentTarget.reset() }}>
                 <div className="cx-row">
@@ -69,7 +69,7 @@ export default function ContactPage() {
               </div>
             </section>
 
-            <aside className="cx-aside" aria-label="Clinic information">
+            <aside className="cx-aside page-enter delay-2" aria-label="Clinic information">
               <p className="cx-subhead">With our services you can</p>
               <ul className="cx-checks">
                 {services.map((service) => (
