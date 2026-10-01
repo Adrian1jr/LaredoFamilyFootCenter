@@ -16,14 +16,6 @@ export function SiteFooter() {
           <p>
             Professional foot and ankle care for Laredo families, since 1994.
           </p>
-          <a
-            href="https://www.google.com/maps/dir/?api=1&destination=604+Shiloh+Dr,+Laredo,+TX+78045"
-            target="_blank"
-            rel="noreferrer"
-            className="footer-directions"
-          >
-            <MapPin size={16} /> Get directions to our office
-          </a>
         </div>
         <div className="footer-column">
           <p className="footer-heading">Browse our website</p>
@@ -44,6 +36,14 @@ export function SiteFooter() {
             <br />
             Laredo, TX 78045
           </p>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=604+Shiloh+Dr,+Laredo,+TX+78045"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-directions"
+          >
+            <MapPin size={16} aria-hidden="true" /> Get directions
+          </a>
           <p>
             <b>Phone</b>
             <br />
@@ -53,6 +53,15 @@ export function SiteFooter() {
         <div className="footer-column footer-hours">
           <p className="footer-heading">Business hours</p>
           <BusinessHours />
+        </div>
+      </div>
+      <div className="shell footer-payments" aria-label="Accepted payment methods">
+        <p>We accept</p>
+        <div className="payment-methods">
+          <img src="/images/visa.png" alt="Visa" className="payment-logo" />
+          <img src="/images/mastercard.png" alt="Mastercard" className="payment-logo" />
+          <img src="/images/amex.png" alt="American Express" className="payment-logo" />
+          <img src="/images/cash.svg" alt="Cash" className="payment-logo" />
         </div>
       </div>
       <div className="shell footer-bottom">

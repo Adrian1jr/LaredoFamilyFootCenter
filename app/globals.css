@@ -23,6 +23,17 @@ body { margin:0; background:var(--background); color:var(--foreground); font-fam
 .topbar { background:#6d0b0c; color:#f3d2d4; font-size:11px; letter-spacing:.08em; text-transform:uppercase; padding:10px 0; }
 .topbar a { color:#fff; font-weight:700; }
 .site-header { position:relative; z-index:30; background:#fff; box-shadow:0 5px 24px #662d2e12; }
+.mobile-doctor-name { flex:1; min-width:0; color:#880303; font:400 17px/1.1 Georgia,'Times New Roman',serif; text-align:center; }
+.mobile-doctor-name span { display:block; white-space:nowrap; }
+.mobile-doctor-name span:last-child { margin-top:3px; font:700 10px/1.2 Arial,Helvetica,sans-serif; letter-spacing:.14em; }
+.mobile-menu { flex:none; }
+.mobile-menu summary { display:grid; place-items:center; width:48px; height:48px; border:1px solid #cd9c9e; border-radius:50%; color:#880303; cursor:pointer; list-style:none; }
+.mobile-menu summary::-webkit-details-marker { display:none; }
+.mobile-menu summary::marker { content:''; }
+.mobile-menu summary:focus-visible { outline:2px solid #880303; outline-offset:3px; }
+.mobile-menu-close-icon,.mobile-menu[open] .mobile-menu-open-icon { display:none; }
+.mobile-menu[open] .mobile-menu-close-icon { display:block; }
+.mobile-nav { position:absolute; z-index:1; top:100%; right:0; left:0; border-top:1px solid #f3d2d4; background:#fff; box-shadow:0 18px 30px #662d2e20; }
 .nav-link { padding:18px 16px; color:#662d2e; font-size:13px; font-weight:700; letter-spacing:.03em; text-transform:uppercase; transition:color .2s, background .2s; }
 .nav-link:hover { background:#faf1f1; color:#880303; }
 .nav-action { display:flex; align-items:center; gap:7px; color:#880303; font-size:13px; font-weight:700; }
@@ -121,7 +132,7 @@ body { margin:0; background:var(--background); color:var(--foreground); font-fam
 .footer-logo { width:190px; height:124px; object-fit:contain; filter:drop-shadow(0 10px 18px #3f16181c); }
 .footer-brand 
  p { max-width:270px; margin-top:22px; color:#662d2e; font-size:15px; line-height:1.7; }
-.footer-directions { display:inline-flex !important; align-items:center; gap:8px; margin-top:22px !important; color:#880303 !important; font-weight:700; text-decoration:underline; text-underline-offset:4px; }
+.footer-directions { display:inline-flex !important; align-items:center; gap:8px; margin-top:8px !important; color:#880303 !important; font-weight:700; text-decoration:underline; text-underline-offset:4px; }
 .footer-column { min-width:0; padding-top:0; }
 .footer a { display:block; margin-top:16px; color:#662d2e; font-size:15px; transition:color .2s, transform .2s; }
 .footer a:hover { color:#880303; transform:translateX(3px); }
@@ -131,17 +142,21 @@ body { margin:0; background:var(--background); color:var(--foreground); font-fam
 .footer-contact b { color:#880303; }
 .footer-contact a { display:inline; margin:0; color:#880303; text-decoration:underline; }
 .footer-hours .hours-list { color:#662d2e; font-size:15px; }
-.payment-methods { display:flex; align-items:center; gap:6px; margin-top:24px; }
-.payment-logo { display:block; width:auto; height:30px; object-fit:contain; border-radius:2px; }
+.footer-payments { display:flex; align-items:center; gap:20px; margin-top:48px; }
+.footer-payments p { margin:0; color:#662d2e; font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; white-space:nowrap; }
+.payment-methods { display:flex; flex-wrap:wrap; align-items:center; gap:10px; }
+.payment-logo { display:block; width:70px; height:44px; padding:3px; border:1px solid #ecd8d8; border-radius:6px; background:#fff; object-fit:contain; }
 .footer-hours small { display:block; margin-top:10px; color:#6d0b0c; font-size:11px; }
-.footer-bottom { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-top:64px; padding:22px 0; border-top:1px solid #ecd8d8; color:#662d2e; font-size:12px; }
+.footer-bottom { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-top:32px; padding:22px 0; border-top:1px solid #ecd8d8; color:#662d2e; font-size:12px; }
 .footer-bottom p { margin:0; }
 .footer-legal { display:flex; align-items:center; justify-content:center; gap:20px; }
 .footer-bottom a { display:inline; margin:0; color:#880303; font-size:12px; text-decoration:underline; text-underline-offset:3px; }
 .footer-credit { color:#662d2e; white-space:nowrap; font-weight:700; }
 .footer-credit a { color:inherit; font-weight:700; }
-@media (max-width: 900px) { .contact-layout { grid-template-columns:1fr; } .contact-form { order:-1; border-left:0; border-bottom:1px solid #ecd8d8; } .contact-intro { padding:38px 28px; } .footer-grid { grid-template-columns:1fr 1fr; gap:42px 28px; } }
-@media (max-width: 520px) { .footer { padding-top:54px; } .footer-grid { grid-template-columns:1fr; gap:36px; } .footer-logo-wrap { width:190px; height:120px; } .footer-logo { width:175px; height:112px; } .footer-bottom { align-items:flex-start; flex-direction:column; margin-top:45px; gap:14px; } .footer-legal { justify-content:flex-start; gap:14px; } .footer-credit { white-space:normal; } }
+@media (max-width: 900px) { .contact-layout { grid-template-columns:1fr; } .contact-form { order:-1; border-left:0; border-bottom:1px solid #ecd8d8; } .contact-intro { padding:38px 28px; } .footer-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:42px 28px; } }
+@media (max-width: 700px) { .footer-grid { grid-template-columns:minmax(0,1fr); gap:36px; } .footer-hours { width:min(100%,240px); } }
+@media (max-width: 520px) { .footer { padding-top:54px; } .footer-logo-wrap { width:190px; height:120px; } .footer-logo { width:175px; height:112px; } .footer-bottom { align-items:flex-start; flex-direction:column; margin-top:45px; gap:14px; } .footer-legal { justify-content:flex-start; gap:14px; } .footer-credit { white-space:normal; } }
+@media (max-width: 520px) { .footer-payments { flex-direction:column; align-items:flex-start; gap:12px; margin-top:36px; } .payment-methods { gap:8px; } .payment-logo { width:60px; height:38px; } .footer-bottom { margin-top:28px; } }
 .quick-actions { position:fixed; right:22px; bottom:22px; z-index:40; display:flex; flex-direction:column; gap:10px; }
 .quick-actions a { display:grid; place-items:center; width:48px; height:48px; border-radius:50%; background:#880303; color:#fff; box-shadow:0 8px 25px #3c090c35; transition:transform .2s, background .2s; }
 .quick-actions a:hover { transform:translateY(-3px); background:#6d0b0c; }
