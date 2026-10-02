@@ -121,8 +121,8 @@ export default function AnklePainPage() {
           </div>
           <figure className="ankle-causes-media">
             <img
-              src="/ankle-care.png"
-              alt="Podiatrist examining a patient's ankle on an exam table"
+              src="/podiatry-consultation.png"
+              alt="Person holding a painful ankle"
             />
           </figure>
         </div>

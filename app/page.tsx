@@ -17,7 +17,7 @@ const serviceImages = {
   foot: '/foot-pain.png',
   heel: '/heel-pain.png',
   ankle: '/ankle-care.png',
-  wound: '/wound-care.png',
+  wound: '/wound-care.jpg',
 };
 
 const services = [
@@ -168,9 +168,6 @@ export default function Page() {
               explain your options clearly, and build a plan that fits your
               goals.
             </p>
-            <a href="#contact" className="button button-primary mt-8">
-              Start a conversation <ArrowRight size={16} />
-            </a>
           </div>
           <div className="feature-list">
             <div>

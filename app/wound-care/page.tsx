@@ -109,8 +109,8 @@ export default function WoundCarePage() {
           </div>
           <figure className="wound-hero-media">
             <img
-              src="/wound-care.png"
-              alt="Gloved hands applying a bandage to a patient's foot"
+              src="/wound-care.jpg"
+              alt="Podiatrist wrapping a patient's foot with a bandage"
             />
           </figure>
         </div>

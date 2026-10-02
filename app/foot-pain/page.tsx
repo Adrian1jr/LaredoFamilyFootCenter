@@ -41,9 +41,6 @@ export default function FootPainPage() {
               non-surgical first. If that does not do the trick, then we can
               look at surgical options to best correct the pain.
             </p>
-            <a href="tel:+19567123338" className="button button-light mt-6">
-              Talk with our team <ArrowRight size={16} />
-            </a>
           </div>
           <img
             src="/foot-pain.png"
@@ -79,7 +76,6 @@ export default function FootPainPage() {
         }
         .service-intro .section-title {
           max-width: 700px;
-          text-transform: capitalize;
         }
         .service-copy {
           max-width: 1000px;
