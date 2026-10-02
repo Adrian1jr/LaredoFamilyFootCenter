@@ -42,7 +42,7 @@ export function SiteFooter() {
             rel="noreferrer"
             className="footer-directions"
           >
-            <MapPin size={16} aria-hidden="true" /> Get directions
+            Get directions <MapPin size={16} aria-hidden="true" />
           </a>
           <p>
             <b>Phone</b>
@@ -55,12 +55,23 @@ export function SiteFooter() {
           <BusinessHours />
         </div>
       </div>
-      <div className="shell footer-payments" aria-label="Accepted payment methods">
+      <div
+        className="shell footer-payments"
+        aria-label="Accepted payment methods"
+      >
         <p>We accept</p>
         <div className="payment-methods">
           <img src="/images/visa.png" alt="Visa" className="payment-logo" />
-          <img src="/images/mastercard.png" alt="Mastercard" className="payment-logo" />
-          <img src="/images/amex.png" alt="American Express" className="payment-logo" />
+          <img
+            src="/images/mastercard.png"
+            alt="Mastercard"
+            className="payment-logo"
+          />
+          <img
+            src="/images/amex.png"
+            alt="American Express"
+            className="payment-logo"
+          />
           <img src="/images/cash.svg" alt="Cash" className="payment-logo" />
         </div>
       </div>

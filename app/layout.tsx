@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { QuickActions } from "@/components/quick-actions";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -65,6 +66,7 @@ export default function RootLayout({
         <SiteHeader />
         {children}
         <SiteFooter />
+        <QuickActions />
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>

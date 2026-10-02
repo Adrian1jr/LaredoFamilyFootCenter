@@ -1,7 +1,6 @@
-"use client";
+'use client';
 
-import { ArrowRight, Phone } from "lucide-react";
-import { FootServices } from "@/components/foot-services";
+import { ArrowRight, Phone } from 'lucide-react';
 
 export default function FootPainPage() {
   return (
@@ -12,19 +11,18 @@ export default function FootPainPage() {
           <h1 className="section-title mt-4">Foot pain specialist</h1>
           <div className="service-copy">
             <p>
-              Getting you back on your feet and pain free is{" "}
-              <strong>Laredo Family Foot Center&apos;s</strong> main goal. We specialize
-              in diagnosing and treating a wide range of foot ailments. 25 years of
-              treating <strong>Laredo</strong> makes us the best choice in the area for
-              your foot needs. Dr. Bell stays up to date on the latest treatments to
-              better serve our patients.
+              Getting you back on your feet and pain free is{' '}
+              <strong>Laredo Family Foot Center&apos;s</strong> main goal. We
+              specialize in diagnosing and treating a wide range of foot
+              ailments. 25 years of treating <strong>Laredo</strong> makes us
+              the best choice in the area for your foot needs. Dr. Bell stays up
+              to date on the latest treatments to better serve our patients.
             </p>
             <p>
-              We also want to make this process as easy for you as possible. We know your
-              schedule can become very busy. That is why we accept walk-ins as well as
-              scheduled appointments. Whenever you have free time, we are here to assist
-              you. For more information or to schedule your appointment give us a call
-              today at <a href="tel:+19567123338">(956) 712-FEET (3338)</a>.
+              We know your schedule can be busy, and we want to make care as
+              easy as possible. For more information or to schedule an
+              appointment, call us at{' '}
+              <a href="tel:+19567123338">(956) 712-FEET (3338)</a>.
             </p>
           </div>
         </div>
@@ -36,23 +34,23 @@ export default function FootPainPage() {
             <p className="eyebrow">Personalized treatment</p>
             <h2>Foot pain</h2>
             <p>
-              Laredo Family Foot Center has the experience to effectively diagnose your
-              foot pain. We will recommend our best course of action to treat your pain.
-              What we can guarantee and give you peace of mind, is that we will look and
-              try every option that is non-surgical first. If that does not do the trick,
-              then we can look at surgical options to best correct the pain.
+              Laredo Family Foot Center has the experience to effectively
+              diagnose your foot pain. We will recommend our best course of
+              action to treat your pain. What we can guarantee and give you
+              peace of mind, is that we will look and try every option that is
+              non-surgical first. If that does not do the trick, then we can
+              look at surgical options to best correct the pain.
             </p>
             <a href="tel:+19567123338" className="button button-light mt-6">
               Talk with our team <ArrowRight size={16} />
             </a>
           </div>
-          <img src="/foot-pain.png" alt="Patient receiving care for foot pain" />
+          <img
+            src="/foot-pain.png"
+            alt="Patient receiving care for foot pain"
+          />
         </div>
       </section>
-
-      <div className="page-enter delay-2">
-        <FootServices />
-      </div>
 
       <section className="service-cta page-enter delay-3">
         <div className="shell flex flex-col items-start justify-between gap-7 md:flex-row md:items-center">
@@ -68,7 +66,6 @@ export default function FootPainPage() {
 
       <style jsx>{`
         .service-page {
-          min-height: 100vh;
           background: #faf9f8;
           color: #242022;
         }
@@ -106,12 +103,12 @@ export default function FootPainPage() {
           color: white;
         }
         .service-feature::before {
-          content: "";
+          content: '';
           position: absolute;
           inset: 0;
           background:
             linear-gradient(90deg, #092712e8, #092712a8),
-            url("/foot-care-hero.png") center/cover;
+            url('/foot-care-hero.png') center/cover;
           opacity: 0.85;
         }
         .service-feature-inner {
@@ -185,7 +182,7 @@ export default function FootPainPage() {
           line-height: 1.5;
         }
         .condition-column li::before {
-          content: "+";
+          content: '+';
           margin-right: 3px;
         }
         .service-cta {

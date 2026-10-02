@@ -166,7 +166,7 @@ body { margin:0; background:var(--background); color:var(--foreground); font-fam
 @keyframes page-enter { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
 @keyframes rise { from { opacity:0; transform:translateY(25px); } to { opacity:1; transform:none; } }
 @keyframes heroZoom { from { transform:scale(1.07); } to { transform:scale(1); } }
-.service-page { min-height:100vh; background:#faf9f8; color:#242022; }
+.service-page { background:#faf9f8; color:#242022; }
 .service-intro { background:#fff; padding:88px 0 78px; }
 .service-intro .section-title { max-width:700px; text-transform:capitalize; }
 .service-copy { max-width:1000px; margin-top:28px; color:#242022; font-size:17px; line-height:1.7; }
@@ -198,7 +198,7 @@ body { margin:0; background:var(--background); color:var(--foreground); font-fam
 @media (max-width:520px) { .feature-list > div { padding:20px 0; } .feature-list h3 { font-size:20px; } .feature-list > div > div:last-child p { font-size:13px; } }
 
 /* Heel pain page */
-.heel-hero { background:linear-gradient(180deg,#fff 0%,#fff 62%,#faf4f4 100%); padding:84px 0 96px; }
+.heel-hero { background:linear-gradient(180deg,#fff 0%,#fff 62%,#faf4f4 100%); padding:64px 0 96px; }
 .heel-hero-inner { display:grid; gap:56px; align-items:center; }
 .heel-hero .service-copy { font-size:16.5px; }
 .heel-hero-media { position:relative; margin:0; }
@@ -412,10 +412,12 @@ body { margin:0; background:var(--background); color:var(--foreground); font-fam
 .cx-call h2 { margin:0; color:#2a1414; font:400 clamp(1.8rem,3vw,2.4rem)/1.1 Georgia,serif; }
 .cx-call p { margin-top:14px; max-width:36ch; color:#6b5455; font-size:15px; line-height:1.6; }
 .cx-call-link { display:inline-block; margin-top:28px; color:#880303; font-size:20px; font-weight:700; text-decoration:underline; text-underline-offset:4px; }
+/* email: Restore these styles with the contact page email section.
 .cx-email { margin-top:28px; padding-top:22px; border-top:1px solid #ecd8d8; }
 .cx-email .cx-call-icon { width:42px; height:42px; }
 .cx-email h3 { margin:0; color:#2a1414; font-size:20px; font-weight:700; }
 .cx-email a { display:inline-block; margin-top:10px; color:#880303; font-size:17px; font-weight:700; text-decoration:underline; text-underline-offset:4px; }
+*/
 .cx-subhead { font-weight:700; color:#2a1414; font-size:16px; }
 .cx-aside { padding-top:4px; }
 .cx-checks { margin-top:22px; display:flex; flex-direction:column; gap:16px; }

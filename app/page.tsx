@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { BusinessHours } from "@/components/business-hours";
+import Link from 'next/link';
+import { BusinessHours } from '@/components/business-hours';
 import {
   ArrowRight,
   Clock3,
@@ -10,36 +10,36 @@ import {
   Phone,
   ShieldCheck,
   Stethoscope,
-} from "lucide-react";
+} from 'lucide-react';
 
-const heroImage = "/foot-care-hero.png";
+const heroImage = '/foot-care-hero.png';
 const serviceImages = {
-  foot: "/foot-pain.png",
-  heel: "/heel-pain.png",
-  ankle: "/ankle-care.png",
-  wound: "/wound-care.png",
+  foot: '/foot-pain.png',
+  heel: '/heel-pain.png',
+  ankle: '/ankle-care.png',
+  wound: '/wound-care.png',
 };
 
 const services = [
   {
-    title: "Foot pain",
+    title: 'Foot pain',
     image: serviceImages.foot,
-    copy: "Relief for everyday pain, injuries, bunions, fractures, and more.",
+    copy: 'Relief for everyday pain, injuries, bunions, fractures, and more.',
   },
   {
-    title: "Heel pain",
+    title: 'Heel pain',
     image: serviceImages.heel,
-    copy: "Personalized care for plantar fasciitis, tendonitis, and heel spurs.",
+    copy: 'Personalized care for plantar fasciitis, tendonitis, and heel spurs.',
   },
   {
-    title: "Ankle care",
+    title: 'Ankle care',
     image: serviceImages.ankle,
-    copy: "Expert treatment for sprains, instability, arthritis, and fractures.",
+    copy: 'Expert treatment for sprains, instability, arthritis, and fractures.',
   },
   {
-    title: "Wound care",
+    title: 'Wound care',
     image: serviceImages.wound,
-    copy: "Early, attentive care for diabetic wounds, ulcers, and infections.",
+    copy: 'Early, attentive care for diabetic wounds, ulcers, and infections.',
   },
 ];
 
@@ -62,9 +62,11 @@ export default function Page() {
               Get back to the life you love.
             </h1>
             <p className="animate-rise delay-2 mt-7 max-w-xl text-lg leading-relaxed text-white/85 md:text-xl">
-              Compassionate, experienced care from{" "}
-              <strong className="whitespace-nowrap text-white">Dr. Daniel Bell</strong> for every step,
-              stride, and season of life.
+              Compassionate, experienced care from{' '}
+              <strong className="whitespace-nowrap text-white">
+                Dr. Daniel Bell
+              </strong>{' '}
+              for every step, stride, and season of life.
             </p>
             <div className="animate-rise delay-3 mt-9 flex flex-col gap-3 sm:flex-row">
               <a href="tel:+19567123338" className="button button-light">
@@ -86,15 +88,19 @@ export default function Page() {
       <section className="intro section-pad">
         <div className="shell grid gap-12 md:grid-cols-[.8fr_1.2fr] md:items-end">
           <div>
-            <p className="eyebrow eyebrow-dark">Professional care, close to home</p>
-            <h2 className="section-title mt-4">Your feet carry your whole story.</h2>
+            <p className="eyebrow eyebrow-dark">
+              Professional care, close to home
+            </p>
+            <h2 className="section-title mt-4">
+              Your feet carry your whole story.
+            </h2>
           </div>
           <div>
             <p className="large-copy">
-              Since 1994, Laredo Family Foot Center has helped patients across Laredo and
-              surrounding areas move with less pain and more confidence. We combine
-              thoughtful diagnosis with surgical and non-surgical treatment tailored to
-              your life.
+              Since 1994, Laredo Family Foot Center has helped patients across
+              Laredo and surrounding areas move with less pain and more
+              confidence. We combine thoughtful diagnosis with surgical and
+              non-surgical treatment tailored to your life.
             </p>
             <a href="#about-dr.-bell" className="text-link mt-6 inline-flex">
               Meet Dr. Daniel Bell <ArrowRight size={16} />
@@ -111,21 +117,21 @@ export default function Page() {
               <h2 className="section-title mt-3">Care for every step.</h2>
             </div>
             <p className="max-w-sm text-[#662d2e]">
-              From a new injury to ongoing diabetic foot care, we are here when you need
-              us.
+              From a new injury to ongoing diabetic foot care, we are here when
+              you need us.
             </p>
           </div>
           <div className="service-grid mt-12">
             {services.map((service, index) => (
               <Link
                 href={
-                  service.title === "Foot pain"
-                    ? "/foot-pain"
-                    : service.title === "Heel pain"
-                      ? "/heel-pain"
-                      : service.title === "Ankle care"
-                        ? "/ankle-pain"
-                        : "/wound-care"
+                  service.title === 'Foot pain'
+                    ? '/foot-pain'
+                    : service.title === 'Heel pain'
+                      ? '/heel-pain'
+                      : service.title === 'Ankle care'
+                        ? '/ankle-pain'
+                        : '/wound-care'
                 }
                 key={service.title}
                 className={`service-card service-card-${index + 1}`}
@@ -133,7 +139,9 @@ export default function Page() {
                 <img src={service.image} alt={`${service.title} treatment`} />
                 <div className="service-card-shade" />
                 <div className="service-card-content">
-                  <h3 className="font-display text-3xl text-white">{service.title}</h3>
+                  <h3 className="font-display text-3xl text-white">
+                    {service.title}
+                  </h3>
                   <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/80">
                     {service.copy}
                   </p>
@@ -155,9 +163,10 @@ export default function Page() {
               Experienced hands. A personal approach.
             </h2>
             <p className="large-copy mt-6">
-              As a former state-champion distance runner, Dr. Bell understands foot pain
-              firsthand. That perspective helps him listen closely, explain your options
-              clearly, and build a plan that fits your goals.
+              As a former state-champion distance runner, Dr. Bell understands
+              foot pain firsthand. That perspective helps him listen closely,
+              explain your options clearly, and build a plan that fits your
+              goals.
             </p>
             <a href="#contact" className="button button-primary mt-8">
               Start a conversation <ArrowRight size={16} />
@@ -200,9 +209,10 @@ export default function Page() {
             </p>
           </div>
           <p className="max-w-2xl text-lg leading-relaxed text-white/80">
-            Dr. Bell is a Laredo native, graduate of UT Austin and Barry University School
-            of Podiatric Medicine, and completed a two-year surgical residency in Houston.
-            He brings advanced training and hometown understanding to every visit.
+            Dr. Bell is a Laredo native, graduate of UT Austin and Barry
+            University School of Podiatric Medicine, and completed a two-year
+            surgical residency in Houston. He brings advanced training and
+            hometown understanding to every visit.
           </p>
         </div>
       </section>
@@ -213,8 +223,7 @@ export default function Page() {
             <p className="eyebrow eyebrow-dark">Let&apos;s get you moving</p>
             <h2 className="section-title mt-4">Your next step starts here.</h2>
             <p className="large-copy mt-5 max-w-lg">
-              Walk-ins and scheduled appointments are welcome. Call our office or stop by
-              our Laredo location.
+              Call our office to schedule an appointment at our Laredo location.
             </p>
             <Link href="/contact" className="button button-primary mt-8">
               Contact us <ArrowRight size={16} />
@@ -251,20 +260,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-      <div className="quick-actions">
-        <a href="tel:+19567123338" aria-label="Call office">
-          <Phone size={19} />
-        </a>
-        <a
-          href="https://www.google.com/maps/dir/?api=1&destination=604+Shiloh+Dr,+Laredo,+TX+78045"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Get directions"
-        >
-          <MapPin size={19} />
-        </a>
-      </div>
     </main>
   );
 }
