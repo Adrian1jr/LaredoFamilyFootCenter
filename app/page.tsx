@@ -63,7 +63,7 @@ export default function Page() {
             </h1>
             <p className="animate-rise delay-2 mt-7 max-w-xl text-lg leading-relaxed text-white/85 md:text-xl">
               Compassionate, experienced care from{" "}
-              <strong className="text-white">Dr. Daniel Bell</strong> for every step,
+              <strong className="whitespace-nowrap text-white">Dr. Daniel Bell</strong> for every step,
               stride, and season of life.
             </p>
             <div className="animate-rise delay-3 mt-9 flex flex-col gap-3 sm:flex-row">
